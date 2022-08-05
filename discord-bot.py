@@ -18,7 +18,7 @@ while True:
 
     @bot.event
     async def on_member_remove(member):
-        print(f"leave meow!")
+        print(f"{member} leave meow!")
 
     @bot.command()  # 當收到!meow ping指令
     async def ping(ctx):
@@ -33,5 +33,5 @@ while True:
     async def leave(ctx):
         await ctx.voice_client.disconnect()
 
-    token = "MTAwNDk4NjQ4MDI2OTE5NzMyMg.G7RAmA.y5xI1ff1WhXZnfE5fUb-x4fGDyOwVr5QNtNo94"
+    token = ""
     bot.run(token)
